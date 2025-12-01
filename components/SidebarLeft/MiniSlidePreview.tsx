@@ -8,7 +8,7 @@ export default function MiniSlidePreview({ slide }: any) {
     <div
       className="relative rounded bg-[#0d0d15] overflow-hidden"
       style={{
-        width: 130,
+        width: 100 + '%',
         height: 70,
         position: "relative",
       }}

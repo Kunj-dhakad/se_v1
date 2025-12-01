@@ -23,15 +23,18 @@ export default function SidebarLeft({
   jumpToSlide,
 }: SidebarSlidesProps) {
   return (
-    <aside className="w-28 bg-[#11111c] border-r border-[#1f1f2b] flex flex-col p-3 overflow-y-auto">
+    // <aside className="w-28 bg-[#11111c] border-r border-[#1f1f2b] flex flex-col p-3 overflow-y-auto sidebar">
+    <aside className="w-28 bg-[#11111c] border border-[#eee] flex flex-col overflow-y-auto left-sidebar">
+      <div className="p-2">
       <button
-        onClick={addSlide}
-        className="w-full py-2 bg-[#1e1e2c] rounded-xl text-sm mb-4 hover:bg-[#2a2a3c]"
-      >
-        + New
+          onClick={addSlide}
+          className="w-full py-2 bg-[#1e1e2c] rounded-xl text-sm hover:bg-[#2a2a3c]"
+          >
+          + New
       </button>
+      </div>
 
-      <div className="flex flex-col gap-3 overflow-y-auto pr-1">
+      <div className="flex flex-col gap-3 overflow-y-auto pl-[8px] pr-[8px] pb-[8px] custom-scrollbar">
         {slides.map((s, i) => (
           <button
             key={s.id}

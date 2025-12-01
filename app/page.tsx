@@ -38,14 +38,14 @@ export default function Home() {
                 />
 
                 {/* MAIN WORKSPACE */}
-                <main className="flex-1 flex items-center justify-center bg-[#0d0d16] p-6">
+                <main className="flex-1 flex items-center justify-center bg-[#0d0d16]">
                     <MainCanvas containerRef={containerRef} />
                 </main>
-
+                <ToolbarRight />
                 <PopupPanel />
 
             </div >
-            {/* <ToolbarRight /> */}
+          
         </div >
     );
 }

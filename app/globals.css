@@ -50,3 +50,68 @@ body {
 
 .l  { left: -5px; top: 50%; transform: translateY(-50%); cursor: ew-resize; }
 .r  { right: -5px; top: 50%; transform: translateY(-50%); cursor: ew-resize; } */
+
+/* Tushar Css Start Here  */
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #bababa;
+    border-radius: 10px;
+
+    &:hover {
+      background: #a0a0a0;
+    }
+  }
+}
+
+
+/* === Left Sidebar === */
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    -webkit-box-pack: center;
+    /* justify-content: center; */
+    left: 10px;
+    width: 155px;
+    z-index: 1;
+    height: calc(100% - 80px);
+    border-radius: 10px;
+}
+
+/* === Right Sidebar === */
+.right-menu{
+    z-index: 1199;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: calc(100% - 90px);
+}
+.right-menu .menu-tags{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* for Some time use   */
+.default-img{
+    background-image: url('https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:2400/https://cdn.gamma.app/zc87vhr30n8uf3n/55d4f9064b1a43c89c710ed7ab89dfce/original/malloops_A_giant_snow_globe_containing_a_warm_summer_scene_wi_b64ea26c-97cb-45c8-a37e-1d042d800646_1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+/* Tushar Css End Here  */
