@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* RND */
+
+/* .handle {
+  position: absolute;
+  width: 10px !important;
+  height: 10px !important;
+  background: #f97316;
+  border-radius: 3px;
+  z-index: 200;
+}
+
+
+
+.tl { top: 0px; left: 0px; cursor: nwse-resize; }
+.tr { top: 0px; right: 0px; cursor: nesw-resize; }
+.bl { bottom: 0px; left: 0px; cursor: nesw-resize; }
+.br { bottom: 0px; right: 0px; cursor: nwse-resize; }
+
+
+.t  { top: -5px; left: 50%; transform: translateX(-50%); cursor: ns-resize; }
+.b  { bottom: -5px; left: 50%; transform: translateX(-50%); cursor: ns-resize; }
+
+.l  { left: -5px; top: 50%; transform: translateY(-50%); cursor: ew-resize; }
+.r  { right: -5px; top: 50%; transform: translateY(-50%); cursor: ew-resize; } */
