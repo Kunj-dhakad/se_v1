@@ -4,6 +4,7 @@ import useEditorStore from "@/app/Store/editorStore";
 import AddTextPanel from "./AddTextPanel";
 import AddImagePanel from "./AddImagePanel";
 import AddTemplate from "./AddTemplate";
+import PexelImage from "./PexelImage";
 
 const PopupPanel = () => {
   const active = useEditorStore((s) => s.activeRightPanel);
@@ -36,10 +37,14 @@ const PopupPanel = () => {
           <AddImagePanel />
         )}
 
-         {active === "template" && (
+        {active === "template" && (
           <AddTemplate />
         )}
 
+
+        {active === "PexelImage" && (
+          <PexelImage/>
+        )}
       </div>
     </div>
   );

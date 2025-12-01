@@ -41,11 +41,11 @@ export default function Home() {
                 <main className="flex-1 flex items-center justify-center bg-[#0d0d16] p-6">
                     <MainCanvas containerRef={containerRef} />
                 </main>
-
+                <ToolbarRight />
                 <PopupPanel />
 
             </div >
-            {/* <ToolbarRight /> */}
+
         </div >
     );
 }

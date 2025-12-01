@@ -396,7 +396,7 @@ export type ElementType = {
 export type SlideType = {
   id: string;
   height?: 600;
-  width?: 1200;
+  width?: 1000;
   elements: ElementType[];
   background?: string;
 };

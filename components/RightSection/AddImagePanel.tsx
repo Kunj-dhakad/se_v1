@@ -93,6 +93,7 @@ const AddImagePanel = () => {
   const handleDragStart = (e: React.DragEvent<HTMLDivElement>, type: string) => {
     e.dataTransfer.setData("application/element", type);
   };
+    const setActiveRightPanel = useEditorStore((s) => s.setActiveRightPanel);
 
   return (
     <div className="grid grid-cols-3 gap-3">
@@ -119,10 +120,11 @@ const AddImagePanel = () => {
       <div
         draggable
         onDragStart={(e) => handleDragStart(e, "image-unsplash")}
+        onClick={() => setActiveRightPanel("PexelImage")}
         className="bg-[#1a1a26] border border-[#2c2c38] rounded-lg p-4 text-center 
           hover:bg-[#232334] cursor-grab active:cursor-grabbing"
       >
-        <div className="font-medium text-white text-sm">Unsplash</div>
+        <div className="font-medium text-white text-sm">Pexels</div>
       </div>
 
       {/* AI IMAGE */}

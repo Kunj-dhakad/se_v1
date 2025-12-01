@@ -17,14 +17,8 @@ const ToolbarRight: React.FC = () => {
 
     return (
         <aside
-            // className="w-20 bg-[#11111c] border-l border-[#1f1f2b] 
-            //                 flex flex-col items-center p-4 gap-4"
-            className="
-        fixed right-4 top-24
-        w-20 bg-[#11111c] border border-[#1f1f2b]
-        rounded-2xl shadow-xl z-50
-        flex flex-col items-center p-4 gap-4
-    "
+            className="w-20 bg-[#11111c] border-l border-[#1f1f2b] 
+                            flex flex-col items-center p-4 gap-4"
         >
 
             <button className="w-12 h-12 bg-[#1c1c2a] rounded-xl flex items-center justify-center hover:bg-[#242436]">

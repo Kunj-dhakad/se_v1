@@ -81,7 +81,11 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
   }, [slides.length, containerRef]);
 
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    console.log("Drop event:", e);
     const type = e.dataTransfer.getData("application/element");
+    const imgSrc = e.dataTransfer.getData("application/image-src");
+
+
     const sample = e.dataTransfer.getData("application/sample");
 
     const slideRect = e.currentTarget.getBoundingClientRect();
@@ -105,6 +109,51 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
         fontFamily: "Inter",
       });
     }
+
+ if (type === "image" && imgSrc) {
+        addElement({
+            type: "image",
+            src: imgSrc,
+
+            x,
+            y,
+            width: 300,
+            height: 200,
+            rotation: 0,
+            opacity: 1,
+            zIndex: 1,
+
+            stroke: "",
+            strokeWidth: 0,
+            borderRadius: "0",
+
+            offsetX: 0,
+            offsetY: 0,
+            blur: 0,
+            color: "rgba(0,0,0,0)",
+
+            fit: "cover",
+            maxWidth: 300,
+            maxHeight: 200,
+            objectFit: "cover",
+
+            contrast: 100,
+            hueRotate: 0,
+            saturate: 100,
+
+            grayscale: 0,
+            sepia: 0,
+            brightness: 100,
+
+            transform: "none",
+            isDragging: false,
+            animationType: "None",
+            animation: {
+                in: { type: "None", duration: 0, slideDistanceX: 0, slideDistanceY: 0, degrees: 0 },
+                out: { type: "None", duration: 0, slideDistanceX: 0, slideDistanceY: 0, degrees: 0 }
+            }
+        });}
+
   };
 
   return (
