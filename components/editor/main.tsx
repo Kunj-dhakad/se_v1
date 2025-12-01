@@ -157,10 +157,11 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
   };
 
   return (
-    <div className="relative w-[1100px] h-[650px] bg-[#0c0c1a]  rounded-xl shadow-xl overflow-hidden">
+    <div className="relative w-full h-full bg-[#0c0c1a]  shadow-xl overflow-hidden">
       <div
         ref={containerRef}
-        className="absolute inset-0 overflow-auto rounded-xl bg-[#0d0d16]"
+       className="default-img absolute inset-0 overflow-auto [scrollbar-width:none] w-full bg-[#0d0d16] flex flex-col items-center pl-[11em] py-[1em] pr-[7em]"
+
       // style={{ scrollSnapType: "y mandatory" }}
       >
         <div style={{ width: canvasWidth }}>
@@ -191,9 +192,9 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
                 //                           url("https://kdmeditor.s3.us-east-1.amazonaws.com/kd_videoeditor/files/bg_image/snowy-winter-background.png") center/cover no-repeat
                 //                         `
 
-                background: slide.background || "#0c0c1a",
+                // background: slide.background || "#0c0c1a",
               }}
-              className="transition-all duration-150 mb-20 mt-20"
+              className="transition-all duration-150 mb-5"
             >
               {/* RENDER ELEMENTS */}
               {slide.elements.map((el) => {
