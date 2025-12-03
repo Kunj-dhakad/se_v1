@@ -17,7 +17,7 @@ const ToolbarRight: React.FC = () => {
 
     return (
         <aside className="flex flex-col items-center right-menu">
-            <div className="gap-2 bg-[#11111c] border border-[#eee] menu-tags flex items-center flex-col">
+            <div className="gap-2 bg-[#11111c] border border-[#3C433C] menu-tags flex items-center flex-col">
                 <button className="w-8 h-8 bg-[#1c1c2a] rounded flex items-center justify-center hover:bg-[#242436]">
                     <Search size={18} />
                 </button>

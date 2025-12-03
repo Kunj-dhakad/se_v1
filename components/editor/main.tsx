@@ -138,10 +138,10 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
                 // scrollSnapAlign: "start",
                 borderRadius: 8,
                 boxSizing: "content-box",
-                // background: `
-                //                           linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                //                           url("https://kdmeditor.s3.us-east-1.amazonaws.com/kd_videoeditor/files/bg_image/snowy-winter-background.png") center/cover no-repeat
-                //                         `
+                background: `
+                                          linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                                          url("https://kdmeditor.s3.us-east-1.amazonaws.com/kd_videoeditor/files/bg_image/snowy-winter-background.png") center/cover no-repeat
+                                        `
 
                 // background: slide.background || "#0c0c1a",
               }}

@@ -12,7 +12,7 @@ const PopupPanel = () => {
   if (!active) return null;
 
   return (
-    <div className="absolute right-24 top-20 w-96 max-h-[80vh] bg-[#11111c] border border-[#2b2b3c] rounded-xl shadow-2xl overflow-hidden z-9999">
+    <div className="absolute right-20 top-18 w-96 max-h-[80vh] bg-[#11111c] border border-[#2b2b3c] rounded-xl shadow-2xl overflow-hidden z-9999">
 
       {/* HEADER */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#2b2b3c]">
