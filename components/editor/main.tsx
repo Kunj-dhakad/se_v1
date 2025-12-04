@@ -52,33 +52,33 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
 
 
 
+  const slideHeight = slides[activeSlide]?.height || 480;
+  const canvasWidth = slides[activeSlide]?.width || 853.33;
 
+  // useEffect(() => {
+  //   const container = containerRef.current;
+  //   if (!container) return;
 
-  const slideHeight =slides[activeSlide]?.height || 600;
-  const canvasWidth = slides[activeSlide]?.width || 1000;
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+  //   let raf = 0;
 
-    let raf = 0;
+  //   const onScroll = () => {
 
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
+  //     cancelAnimationFrame(raf);
 
-      raf = requestAnimationFrame(() => {
-        const scrollPos = container.scrollTop;
+  //     raf = requestAnimationFrame(() => {
+  //       const scrollPos = container.scrollTop;
 
-        const idx = Math.round(scrollPos / slideHeight);
+  //       const idx = Math.round(scrollPos / slideHeight);
 
-        const bounded = Math.max(0, Math.min(slides.length - 1, idx));
+  //       const bounded = Math.max(0, Math.min(slides.length - 1, idx));
 
-        useEditorStore.getState().setActiveSlide(bounded);
-      });
-    };
+  //       useEditorStore.getState().setActiveSlide(bounded);
+  //     });
+  //   };
 
-    container.addEventListener("scroll", onScroll);
-    return () => container.removeEventListener("scroll", onScroll);
-  }, [slides.length, containerRef]);
+  //   container.addEventListener("scroll", onScroll);
+  //   return () => container.removeEventListener("scroll", onScroll);
+  // }, [slides.length, containerRef]);
 
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     console.log("Drop event:", e);
@@ -110,61 +110,63 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
       });
     }
 
- if (type === "image" && imgSrc) {
-        addElement({
-            type: "image",
-            src: imgSrc,
+    if (type === "image" && imgSrc) {
+      addElement({
+        type: "image",
+        src: imgSrc,
 
-            x,
-            y,
-            width: 300,
-            height: 200,
-            rotation: 0,
-            opacity: 1,
-            zIndex: 1,
+        x,
+        y,
+        width: 300,
+        height: 200,
+        rotation: 0,
+        opacity: 1,
+        zIndex: 1,
 
-            stroke: "",
-            strokeWidth: 0,
-            borderRadius: "0",
+        stroke: "",
+        strokeWidth: 0,
+        borderRadius: "0",
 
-            offsetX: 0,
-            offsetY: 0,
-            blur: 0,
-            color: "rgba(0,0,0,0)",
+        offsetX: 0,
+        offsetY: 0,
+        blur: 0,
+        color: "rgba(0,0,0,0)",
 
-            fit: "cover",
-            maxWidth: 300,
-            maxHeight: 200,
-            objectFit: "cover",
+        fit: "cover",
+        maxWidth: 300,
+        maxHeight: 200,
+        objectFit: "cover",
 
-            contrast: 100,
-            hueRotate: 0,
-            saturate: 100,
+        contrast: 100,
+        hueRotate: 0,
+        saturate: 100,
 
-            grayscale: 0,
-            sepia: 0,
-            brightness: 100,
+        grayscale: 0,
+        sepia: 0,
+        brightness: 100,
 
-            transform: "none",
-            isDragging: false,
-            animationType: "None",
-            animation: {
-                in: { type: "None", duration: 0, slideDistanceX: 0, slideDistanceY: 0, degrees: 0 },
-                out: { type: "None", duration: 0, slideDistanceX: 0, slideDistanceY: 0, degrees: 0 }
-            }
-        });}
+        transform: "none",
+        isDragging: false,
+        animationType: "None",
+        animation: {
+          in: { type: "None", duration: 0, slideDistanceX: 0, slideDistanceY: 0, degrees: 0 },
+          out: { type: "None", duration: 0, slideDistanceX: 0, slideDistanceY: 0, degrees: 0 }
+        }
+      });
+    }
 
   };
 
   return (
-    <div className="relative w-full h-full bg-[#0c0c1a]  shadow-xl overflow-hidden">
+    <div className="relative w-full h-full bg-#0c0c1a  shadow-xl overflow-hidden">
       <div
         ref={containerRef}
-       className="default-img absolute inset-0 overflow-auto [scrollbar-width:none] w-full bg-[#0d0d16] flex flex-col items-center pl-[11em] py-[1em] pr-[7em]"
+        className="default-img absolute inset-0 overflow-auto [scrollbar-width:none] w-full bg-[#0d0d16] flex flex-col items-center pl-[11em] py-[1em] pr-[7em]"
 
       // style={{ scrollSnapType: "y mandatory" }}
       >
         <div style={{ width: canvasWidth }}>
+
           {slides.map((slide, idx) => (
             <div
               key={idx}
@@ -187,25 +189,25 @@ const MainCanvas: React.FC<{ containerRef: React.RefObject<HTMLDivElement | null
                 // scrollSnapAlign: "start",
                 borderRadius: 8,
                 boxSizing: "content-box",
-                // background: `
-                //                           linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                //                           url("https://kdmeditor.s3.us-east-1.amazonaws.com/kd_videoeditor/files/bg_image/snowy-winter-background.png") center/cover no-repeat
-                //                         `
+                background: `
+                                          linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                                          url("https://kdmeditor.s3.us-east-1.amazonaws.com/kd_videoeditor/files/bg_image/snowy-winter-background.png") center/cover no-repeat
+                                        `
 
                 // background: slide.background || "#0c0c1a",
               }}
-              className="transition-all duration-150 mb-5"
+              className="transition-all duration-150 mb-7"
             >
               {/* RENDER ELEMENTS */}
               {slide.elements.map((el) => {
                 const d = el.data as ElementData;
 
                 if (d.type === "text") {
-                  return <RenderText key={el.id} id={el.id} data={d} />;
+                  return <RenderText key={el.id} id={el.id} data={d} slideIndex={idx} />;
                 }
 
                 if (d.type === "image") {
-                  return <RenderImage key={el.id} id={el.id} data={d} />;
+                  return <RenderImage key={el.id} id={el.id} data={d} slideIndex={idx} />;
                 }
 
                 return null;

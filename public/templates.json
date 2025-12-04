@@ -1,46 +1,50 @@
 {
     "modern": {
+        "size": {
+            "width": 1280,
+            "height": 720
+        },
         "slides": [
             {
                 "id": "1",
                 "elements": [
                     {
-                        "id": "1-1",
+                        "id": "1-title",
                         "data": {
                             "type": "text",
-                            "text": "Benefits of AI in Education",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Business Preview Marketing",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "1-2",
+                        "id": "1-body",
                         "data": {
                             "type": "text",
-                            "text": "Discover how artificial intelligence is transforming the educational landscape, enhancing learning experiences and outcomes for students and educators alike.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "An overview of our marketing strategy and business outlook for the coming year.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "1-3",
+                        "id": "1-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1513258496099-48168024aec0",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -50,42 +54,42 @@
                 "id": "2",
                 "elements": [
                     {
-                        "id": "2-1",
+                        "id": "2-title",
                         "data": {
                             "type": "text",
-                            "text": "Personalized Learning Experiences",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Market Overview",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "2-2",
+                        "id": "2-body",
                         "data": {
                             "type": "text",
-                            "text": "AI tailors educational content to individual student needs, adapting lessons and pacing to maximize understanding and engagement.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Analyzing current trends and opportunities in our target market segment.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "2-3",
+                        "id": "2-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1503676382389-4809596d5290",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -95,42 +99,42 @@
                 "id": "3",
                 "elements": [
                     {
-                        "id": "3-1",
+                        "id": "3-title",
                         "data": {
                             "type": "text",
-                            "text": "Efficient Administrative Tasks",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Target Audience",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "3-2",
+                        "id": "3-body",
                         "data": {
                             "type": "text",
-                            "text": "AI automates grading, scheduling, and record-keeping, freeing educators to focus more on teaching and student interaction.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Defining our ideal customers and their key characteristics for focused marketing.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "3-3",
+                        "id": "3-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1464983953574-0892a716854b",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1515168833906-d2a3b82b302c",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -140,42 +144,42 @@
                 "id": "4",
                 "elements": [
                     {
-                        "id": "4-1",
+                        "id": "4-title",
                         "data": {
                             "type": "text",
-                            "text": "24/7 Learning Support",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Brand Positioning",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "4-2",
+                        "id": "4-body",
                         "data": {
                             "type": "text",
-                            "text": "AI-powered chatbots and virtual tutors provide students with instant help and resources at any time, enhancing accessibility.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "How we differentiate our brand in a competitive marketplace.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "4-3",
+                        "id": "4-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1510936111840-6cef99faf2a9",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -185,42 +189,42 @@
                 "id": "5",
                 "elements": [
                     {
-                        "id": "5-1",
+                        "id": "5-title",
                         "data": {
                             "type": "text",
-                            "text": "Data-Driven Insights",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Marketing Channels",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "5-2",
+                        "id": "5-body",
                         "data": {
                             "type": "text",
-                            "text": "AI analyzes student performance data to identify learning gaps, predict outcomes, and inform instructional strategies.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Utilizing digital, social, and traditional media to reach our audience.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "5-3",
+                        "id": "5-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1464983953574-0892a716854b",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -230,42 +234,42 @@
                 "id": "6",
                 "elements": [
                     {
-                        "id": "6-1",
+                        "id": "6-title",
                         "data": {
                             "type": "text",
-                            "text": "Enhanced Engagement",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Content Strategy",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "6-2",
+                        "id": "6-body",
                         "data": {
                             "type": "text",
-                            "text": "Interactive AI tools and gamified learning platforms make education more engaging and enjoyable for students.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Creating valuable and engaging content to attract and retain customers.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "6-3",
+                        "id": "6-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1517520287167-4bbf64a00d66",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1503676382389-4809596d5290",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -275,42 +279,42 @@
                 "id": "7",
                 "elements": [
                     {
-                        "id": "7-1",
+                        "id": "7-title",
                         "data": {
                             "type": "text",
-                            "text": "Support for Diverse Learners",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Digital Campaigns",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "7-2",
+                        "id": "7-body",
                         "data": {
                             "type": "text",
-                            "text": "AI assists students with disabilities by providing adaptive technologies and accessible learning materials.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Leveraging online advertising and email marketing for maximum reach.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "7-3",
+                        "id": "7-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1461800919507-79b16743b257",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -320,42 +324,42 @@
                 "id": "8",
                 "elements": [
                     {
-                        "id": "8-1",
+                        "id": "8-title",
                         "data": {
                             "type": "text",
-                            "text": "Global Collaboration",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Performance Metrics",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "8-2",
+                        "id": "8-body",
                         "data": {
                             "type": "text",
-                            "text": "AI-powered platforms connect students and educators worldwide, fostering collaboration and cultural exchange.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Measuring success through KPIs such as engagement, leads, and conversions.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "8-3",
+                        "id": "8-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -365,42 +369,42 @@
                 "id": "9",
                 "elements": [
                     {
-                        "id": "9-1",
+                        "id": "9-title",
                         "data": {
                             "type": "text",
-                            "text": "Continuous Improvement",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Budget & Resources",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "9-2",
+                        "id": "9-body",
                         "data": {
                             "type": "text",
-                            "text": "AI systems learn and evolve, constantly improving educational tools and methods based on feedback and data.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Allocating funds and team resources for optimal marketing impact.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "9-3",
+                        "id": "9-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }
@@ -410,42 +414,42 @@
                 "id": "10",
                 "elements": [
                     {
-                        "id": "10-1",
+                        "id": "10-title",
                         "data": {
                             "type": "text",
-                            "text": "The Future of AI in Education",
-                            "x": 120,
-                            "y": 100,
-                            "width": 400,
-                            "height": 60,
+                            "text": "Next Steps",
+                            "x": 80,
+                            "y": 80,
+                            "width": 500,
+                            "height": 90,
                             "color": "#ffffff",
-                            "fontSize": 40,
+                            "fontSize": 44,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "10-2",
+                        "id": "10-body",
                         "data": {
                             "type": "text",
-                            "text": "AI will continue to revolutionize education, making learning more accessible, efficient, and impactful for everyone.",
-                            "x": 120,
-                            "y": 180,
-                            "width": 600,
-                            "height": 200,
+                            "text": "Implementing our marketing plan and tracking progress for continued growth.",
+                            "x": 80,
+                            "y": 200,
+                            "width": 500,
+                            "height": 300,
                             "color": "#ffffff",
-                            "fontSize": 22,
+                            "fontSize": 24,
                             "fontFamily": "Inter"
                         }
                     },
                     {
-                        "id": "10-3",
+                        "id": "10-image",
                         "data": {
                             "type": "image",
-                            "src": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-                            "x": 650,
-                            "y": 150,
-                            "width": 350,
-                            "height": 300,
+                            "src": "https://images.unsplash.com/photo-1461344577544-4e5dc9487184",
+                            "x": 700,
+                            "y": 80,
+                            "width": 500,
+                            "height": 560,
                             "fit": "cover"
                         }
                     }

@@ -1,0 +1,476 @@
+{
+    "modern": {
+        "slides": [
+            {
+                "id": "1",
+                "layout": "image-left",
+                "elements": [
+                    {
+                        "id": "1-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+                            "x": 0,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "1-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "The Benefits of Education",
+                            "x": 520,
+                            "y": 100,
+                            "width": 600,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "1-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Education is a powerful tool that transforms lives, empowers individuals, and drives progress in society. Discover the key benefits of education in today’s world.",
+                            "x": 520,
+                            "y": 200,
+                            "width": 600,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "layout": "image-right",
+                "elements": [
+                    {
+                        "id": "2-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80",
+                            "x": 620,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "2-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Unlocking Opportunities",
+                            "x": 40,
+                            "y": 100,
+                            "width": 540,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "2-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Education opens doors to new career paths, higher earning potential, and a broader range of opportunities, enabling individuals to achieve their ambitions.",
+                            "x": 40,
+                            "y": 200,
+                            "width": 540,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "layout": "image-left",
+                "elements": [
+                    {
+                        "id": "3-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80",
+                            "x": 0,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "3-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Empowering Individuals",
+                            "x": 520,
+                            "y": 100,
+                            "width": 600,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "3-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Through knowledge and skills, education empowers people to make informed decisions, solve problems, and take control of their futures.",
+                            "x": 520,
+                            "y": 200,
+                            "width": 600,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "4",
+                "layout": "image-right",
+                "elements": [
+                    {
+                        "id": "4-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+                            "x": 620,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "4-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Driving Economic Growth",
+                            "x": 40,
+                            "y": 100,
+                            "width": 540,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "4-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Educated populations contribute to stronger economies by fostering innovation, productivity, and entrepreneurship on a global scale.",
+                            "x": 40,
+                            "y": 200,
+                            "width": 540,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "5",
+                "layout": "image-left",
+                "elements": [
+                    {
+                        "id": "5-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80",
+                            "x": 0,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "5-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Promoting Equality",
+                            "x": 520,
+                            "y": 100,
+                            "width": 600,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "5-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Education helps bridge social and economic gaps, providing equal opportunities for all, regardless of background or circumstance.",
+                            "x": 520,
+                            "y": 200,
+                            "width": 600,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "6",
+                "layout": "image-right",
+                "elements": [
+                    {
+                        "id": "6-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80",
+                            "x": 620,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "6-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Fostering Critical Thinking",
+                            "x": 40,
+                            "y": 100,
+                            "width": 540,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "6-body",
+                        "data": {
+                            "type": "text",
+                            "text": "A strong education cultivates analytical and creative thinking, empowering individuals to tackle complex challenges with confidence.",
+                            "x": 40,
+                            "y": 200,
+                            "width": 540,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "7",
+                "layout": "image-left",
+                "elements": [
+                    {
+                        "id": "7-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=800&q=80",
+                            "x": 0,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "7-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Building Stronger Communities",
+                            "x": 520,
+                            "y": 100,
+                            "width": 600,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "7-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Education encourages civic engagement, social responsibility, and collaboration, leading to healthier, more resilient communities.",
+                            "x": 520,
+                            "y": 200,
+                            "width": 600,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "8",
+                "layout": "image-right",
+                "elements": [
+                    {
+                        "id": "8-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?auto=format&fit=crop&w=800&q=80",
+                            "x": 620,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "8-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Improving Health Outcomes",
+                            "x": 40,
+                            "y": 100,
+                            "width": 540,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "8-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Educated individuals are more likely to make healthy choices, access healthcare, and contribute to overall public health improvements.",
+                            "x": 40,
+                            "y": 200,
+                            "width": 540,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "9",
+                "layout": "image-left",
+                "elements": [
+                    {
+                        "id": "9-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+                            "x": 0,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "9-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Encouraging Lifelong Learning",
+                            "x": 520,
+                            "y": 100,
+                            "width": 600,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "9-body",
+                        "data": {
+                            "type": "text",
+                            "text": "Education instills a passion for continuous growth, adaptability, and curiosity—essential qualities in a rapidly changing world.",
+                            "x": 520,
+                            "y": 200,
+                            "width": 600,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "10",
+                "layout": "image-right",
+                "elements": [
+                    {
+                        "id": "10-img",
+                        "data": {
+                            "type": "image",
+                            "src": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+                            "x": 620,
+                            "y": 0,
+                            "width": 500,
+                            "height": 600,
+                            "fit": "cover"
+                        }
+                    },
+                    {
+                        "id": "10-heading",
+                        "data": {
+                            "type": "text",
+                            "text": "Shaping a Better Future",
+                            "x": 40,
+                            "y": 100,
+                            "width": 540,
+                            "height": 80,
+                            "color": "#000",
+                            "fontSize": 42,
+                            "fontFamily": "Inter",
+                            "fontWeight": "600"
+                        }
+                    },
+                    {
+                        "id": "10-body",
+                        "data": {
+                            "type": "text",
+                            "text": "By investing in education, we invest in a brighter, more equitable, and sustainable future for generations to come.",
+                            "x": 40,
+                            "y": 200,
+                            "width": 540,
+                            "height": 300,
+                            "color": "#333",
+                            "fontSize": 22,
+                            "fontFamily": "Inter"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -3,13 +3,14 @@ import useEditorStore, { ElementData } from "@/app/Store/editorStore";
 
 import { Rnd } from "react-rnd"
 
-const RenderImage: React.FC<{ id: string; data: ElementData }> = ({ id, data }) => {
+const RenderImage: React.FC<{ id: string; data: ElementData; slideIndex: number }> = ({ id, data, slideIndex }) => {
 
 
     const updateElement = useEditorStore((s) => s.updateElement);
 
     const selectedId = useEditorStore((s) => s.activeElementId);
     const setActiveElementId = useEditorStore((s) => s.setActiveElementId);
+    const setActiveSlide = useEditorStore(s => s.setActiveSlide);
 
     const [isTransforming, setIsTransforming] = useState(false);
     return (
@@ -109,11 +110,11 @@ const RenderImage: React.FC<{ id: string; data: ElementData }> = ({ id, data }) 
             }
 
             onDragStart={() => setIsTransforming(true)}
-            onResizeStart={() => setIsTransforming(true)}
+            // onResizeStart={() => setIsTransforming(true)}
 
             position={{ x: data.x, y: data.y }}
             size={{ width: data.width, height: data.height }}
-            bounds="parent"
+            // bounds="parent"
             onDragStop={(e, data) => {
                 setIsTransforming(false);
                 updateElement(id, {
@@ -129,8 +130,12 @@ const RenderImage: React.FC<{ id: string; data: ElementData }> = ({ id, data }) 
                     y: pos.y,
                 });
             }}
-            onMouseDown={() =>
-                setActiveElementId(id)}
+
+            onMouseDown={() => {
+                setActiveSlide(slideIndex);   
+                setActiveElementId(id);       
+            }}
+
             style={{
                 border:
                     selectedId === id
@@ -149,9 +154,9 @@ const RenderImage: React.FC<{ id: string; data: ElementData }> = ({ id, data }) 
                 <img
                     src={data.src}
                     style={{
-                        width: data.width,
-                        height: data.height,
-                        objectFit: "contain",
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
                         pointerEvents: "none",
                     }}
                 />

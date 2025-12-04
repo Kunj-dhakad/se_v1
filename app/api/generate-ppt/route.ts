@@ -5,8 +5,8 @@ import PptxGenJS from "pptxgenjs";
 
 const pxToIn = (px: number) => px / 96;
 
-const CANVAS_WIDTH = 1280;
-const CANVAS_HEIGHT = 720;
+const CANVAS_WIDTH = 853.33;
+const CANVAS_HEIGHT = 480;
 
 
 async function fetchImageAsBase64(url: string): Promise<string> {

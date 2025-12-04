@@ -8,9 +8,9 @@ import {
   AlignCenter,
   AlignRight,
   Sparkles,
-  Zap,
+  // Zap,
   // Move,
-  Palette,
+  // Palette,
 } from "lucide-react";
 
 import useEditorStore from "@/app/Store/editorStore";
@@ -40,18 +40,53 @@ const FloatingTextToolbar: React.FC<ToolbarProps> = ({ target }) => {
   };
 
   // Positioning
+  // useEffect(() => {
+  //   if (!target) return;
+  //   const rect = target.getBoundingClientRect();
+  //   const toolbarHeight = 44;
+  //   const margin = 10;
+
+  //   let top = rect.top - toolbarHeight - margin;
+  //   if (top < 60) top = rect.bottom + margin;
+
+  //   const left = rect.left + rect.width / 2;
+
+  //   requestAnimationFrame(() => setPos({ top, left, visible: true }));
+  // }, [target]);
   useEffect(() => {
     if (!target) return;
-    const rect = target.getBoundingClientRect();
-    const toolbarHeight = 44;
-    const margin = 10;
 
-    let top = rect.top - toolbarHeight - margin;
-    if (top < 60) top = rect.bottom + margin;
+    const updatePos = () => {
+      const rect = target.getBoundingClientRect();
+      const toolbarHeight = 44;
+      const margin = 10;
 
-    const left = rect.left + rect.width / 2;
+      let top = rect.top - toolbarHeight - margin;
+      if (top < 60) top = rect.bottom + margin;
 
-    requestAnimationFrame(() => setPos({ top, left, visible: true }));
+      const left = rect.left + rect.width / 2;
+
+      setPos({ top, left, visible: true });
+    };
+
+    // Initial update
+    updatePos();
+
+    // Scroll listeners (whole editor + window)
+    window.addEventListener("scroll", updatePos, true);
+
+    // Resize listener
+    window.addEventListener("resize", updatePos);
+
+    // MutationObserver (text element resize / drag / RND changes)
+    const obs = new MutationObserver(updatePos);
+    obs.observe(target, { attributes: true, childList: true, subtree: true });
+
+    return () => {
+      window.removeEventListener("scroll", updatePos, true);
+      window.removeEventListener("resize", updatePos);
+      obs.disconnect();
+    };
   }, [target]);
 
   if (!pos.visible || !target) return null;
@@ -80,26 +115,26 @@ const FloatingTextToolbar: React.FC<ToolbarProps> = ({ target }) => {
         Lato
       </div> */}
       {/* FONT FAMILY DROPDOWN */}
-<div className="relative">
-  <select
-    className="
+      <div className="relative">
+        <select
+          className="
       px-3 h-32px 
       bg-gray-100 
       rounded-lg text-sm font-medium 
       cursor-pointer
       outline-none
     "
-    value={(element?.data as TextData)?.fontFamily || "Inter"}
-    onChange={(e) => updateText({ fontFamily: e.target.value })}
-  >
-    <option value="Inter">Inter</option>
-    <option value="Lato">Lato</option>
-    <option value="Poppins">Poppins</option>
-    <option value="Roboto">Roboto</option>
-    <option value="Montserrat">Montserrat</option>
-    <option value="Open Sans">Open Sans</option>
-  </select>
-</div>
+          value={(element?.data as TextData)?.fontFamily || "Inter"}
+          onChange={(e) => updateText({ fontFamily: e.target.value })}
+        >
+          <option value="Inter">Inter</option>
+          <option value="Lato">Lato</option>
+          <option value="Poppins">Poppins</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Open Sans">Open Sans</option>
+        </select>
+      </div>
 
 
       {/* FONT SIZE */}

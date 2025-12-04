@@ -15,14 +15,6 @@ const AddImagePanel = () => {
     const reader = new FileReader();
 
     reader.onload = () => {
-      // addElement({
-      //   type: "image",
-      //   src: reader.result as string,
-      //   x: 80,
-      //   y: 120,
-      //   width: 300,
-      //   height: 200,
-      // });
       addElement({
         type: "image",
         src: reader.result as string,

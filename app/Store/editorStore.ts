@@ -329,7 +329,6 @@ export type TextData = Transform & Border & Shadow & {
 
 export type ImageData = Transform & Border & Shadow & {
   type: "image";
-
   src: string;
   alt?: string;
 
@@ -392,14 +391,19 @@ export type ElementType = {
 };
 
 
-
 export type SlideType = {
   id: string;
-  height?: 600;
-  width?: 1000;
-  elements: ElementType[];
+  height?: number;
+  width?: number;
   background?: string;
+  subtitle_url?: string;
+  subtitle_text?: string;
+  subtitle_json?: string;
+  thumbnail?: string;
+  elements: ElementType[];
 };
+
+
 export type SlideTemplate = {
   background?: string;
   elements: {
@@ -440,7 +444,16 @@ interface EditorStore {
 /* ---------------------------- STORE ---------------------------- */
 
 const useEditorStore = create<EditorStore>((set, get) => ({
-  slides: [{ id: "1", elements: [] }],
+  slides: [{
+    id: "1", height: 480,
+    width: 853.33,
+    background: "#000000",
+    subtitle_url: "",
+    subtitle_text: "",
+    subtitle_json: "",
+    thumbnail: "",
+    elements: []
+  }],
   activeSlide: 0,
   activeElementId: null,
   activeRightPanel: null,
@@ -494,15 +507,46 @@ const useEditorStore = create<EditorStore>((set, get) => ({
   },
 
   /* ------------------- SLIDE OPS ------------------- */
+  // addSlide: () => {
+  //   get().pushToHistory();
+  //   set((state) => ({
+  //     slides: [
+  //       ...state.slides,
+  //       { id: Date.now().toString(), elements: [] },
+  //     ],
+  //   }));
+  // },
+
   addSlide: () => {
     get().pushToHistory();
-    set((state) => ({
-      slides: [
-        ...state.slides,
-        { id: Date.now().toString(), elements: [] },
-      ],
-    }));
+
+    set((state) => {
+      const currentSlide = state.slides[state.activeSlide];
+
+      const newSlide: SlideType = {
+        id: Date.now().toString(),
+        height: currentSlide.height,
+        width: currentSlide.width,
+        background: currentSlide.background,
+        subtitle_url: currentSlide.subtitle_url,
+        subtitle_text: currentSlide.subtitle_text,
+        subtitle_json: currentSlide.subtitle_json,
+        thumbnail: currentSlide.thumbnail,
+
+        elements: []
+      };
+
+      // insert new slide AFTER current slide (not at bottom)
+      const slides = [...state.slides];
+      slides.splice(state.activeSlide + 1, 0, newSlide);
+
+      return {
+        slides,
+        activeSlide: state.activeSlide + 1
+      };
+    });
   },
+
 
   deleteSlide: (slideId) => {
     get().pushToHistory();
@@ -523,7 +567,8 @@ const useEditorStore = create<EditorStore>((set, get) => ({
     set((state) => {
       const slides = [...state.slides];
       slides[state.activeSlide].elements.push({
-        id: Date.now().toString(),
+        id: Date.now().toString() + Math.random()
+        ,
         data: el,
       });
       return { slides };
@@ -537,12 +582,12 @@ const useEditorStore = create<EditorStore>((set, get) => ({
       const slides = JSON.parse(JSON.stringify(state.slides));
       const slide = slides[state.activeSlide];
 
-      slide.elements = slide.elements.map((el:ElementType) =>
+      slide.elements = slide.elements.map((el: ElementType) =>
         el.id === elementId
           ? {
-              ...el,
-              data: { ...el.data, ...patch } as ElementData,
-            }
+            ...el,
+            data: { ...el.data, ...patch } as ElementData,
+          }
           : el
       );
 
@@ -556,7 +601,7 @@ const useEditorStore = create<EditorStore>((set, get) => ({
       const slides = JSON.parse(JSON.stringify(state.slides));
       const slide = slides[state.activeSlide];
 
-      slide.elements = slide.elements.filter((el:ElementType) => el.id !== elementId);
+      slide.elements = slide.elements.filter((el: ElementType) => el.id !== elementId);
 
       return {
         slides,
@@ -574,10 +619,10 @@ const useEditorStore = create<EditorStore>((set, get) => ({
   applyFullTemplate: (templateSlides) =>
     set(() => ({
       slides: templateSlides.map((sl) => ({
-        id: Date.now().toString(),
+        id: Date.now().toString() + Math.random(),
         background: sl.background,
         elements: sl.elements.map((el) => ({
-          id: Date.now().toString(),
+          id: Date.now().toString() + Math.random(),
           data: JSON.parse(JSON.stringify(el.data)),
         })),
       })),

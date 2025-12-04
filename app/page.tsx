@@ -1,6 +1,6 @@
 "use client";
 import React, {
-    //  useEffect,
+    useEffect,
     useRef
 } from "react";
 import useEditorStore from "@/app/Store/editorStore";
@@ -19,6 +19,16 @@ export default function Home() {
     const containerRef = useRef<HTMLDivElement | null>(null);
 
     const slideHeight = 600;
+
+
+
+    
+    useEffect(() => {
+        parent.postMessage({ type: "REACT_READY" }, "*");
+        console.log("React: READY message sent");
+    }, []);
+
+
     return (
         <div className="w-full h-screen bg-[#0d0d16] text-white flex flex-col overflow-hidden select-none">
             <Header />
@@ -45,7 +55,7 @@ export default function Home() {
                 <PopupPanel />
 
             </div >
-          
+
         </div >
     );
 }
